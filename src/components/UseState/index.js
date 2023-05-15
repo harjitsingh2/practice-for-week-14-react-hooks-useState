@@ -1,4 +1,5 @@
-import './UseState.css';
+import { useState } from "react";
+import "./UseState.css";
 
 const UseState = () => {
   return (
@@ -7,14 +8,12 @@ const UseState = () => {
       <button>Dark</button>
       <button>Light</button>
       <h2>DISPLAY COUNT HERE</h2>
-      <button>
-        Increment
-      </button>
-      <button>
-        Decrement
-      </button>
+      <button>Increment</button>
+      <button>Decrement</button>
     </div>
   );
 };
+
+console.log(UseState("light"));
 
 export default UseState;
